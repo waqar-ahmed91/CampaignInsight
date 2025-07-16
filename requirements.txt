@@ -1,0 +1,14 @@
+# Core ML and data libraries
+scikit-learn>=1.2.0
+xgboost>=2.0.0
+pandas>=1.3.0
+numpy>=1.21.0
+
+# Imbalanced data handling
+imbalanced-learn>=0.10.0
+
+# Utility libraries
+tqdm>=4.64.0
+
+# Optional GPU support for XGBoost (make sure CUDA is installed correctly)
+# You don't need to add separate GPU-specific packages; XGBoost auto-detects CUDA
