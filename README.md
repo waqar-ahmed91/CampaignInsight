@@ -1,4 +1,3 @@
-
 # CampaignInsight
 
 **AUC-Optimized Mail Response Prediction Pipeline Using XGBoost and Class Imbalance Correction**
