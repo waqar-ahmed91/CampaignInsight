@@ -51,8 +51,6 @@ pip install -r requirements.txt
 ### 1. Load and Preprocess Your Dataset
 
 ```python
-from src.preprocessing import full_preprocessing_pipeline_with_validation
-
 X_train, y_train, X_val, y_val, preprocessor = full_preprocessing_pipeline_with_validation(
     df=your_dataframe,
     label_col='RESPONSE',
@@ -69,8 +67,6 @@ X_train, y_train, X_val, y_val, preprocessor = full_preprocessing_pipeline_with_
 ### 2. Train and Tune Your Model
 
 ```python
-from src.training import train_and_evaluate_model_auc
-
 model, preprocessor, best_thresh = train_and_evaluate_model_auc(
     df_trainval,
     label_col='RESPONSE',
@@ -88,8 +84,6 @@ model, preprocessor, best_thresh = train_and_evaluate_model_auc(
 ### 3. Evaluate on Unseen Test Data
 
 ```python
-from src.evaluation import evaluate_on_test
-
 evaluate_on_test(
     df_test,
     model=model,
